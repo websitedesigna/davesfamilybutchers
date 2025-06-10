@@ -26,6 +26,12 @@ body.loaded {
   width: auto;
   display: block;
 }
+@media (max-width: 768px) {
+  .logo {
+    height: 50px; /* Adjust for smaller screens */
+  }
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
