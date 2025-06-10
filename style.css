@@ -25,6 +25,7 @@ body.loaded {
   height: 60px; /* Adjust height as needed */
   width: auto;
   display: block;
+  border-radius: 50%;
 }
 @media (max-width: 768px) {
   .logo {
