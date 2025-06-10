@@ -1,3 +1,5 @@
+// Dave's Family Butchers Website - Enhanced JavaScript Features
+
 // DOM Elements
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
