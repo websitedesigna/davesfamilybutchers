@@ -21,7 +21,11 @@ body {
 body.loaded {
     animation: pageLoad 0.8s ease-out;
 }
-
+.logo {
+  height: 60px; /* Adjust height as needed */
+  width: auto;
+  display: block;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
