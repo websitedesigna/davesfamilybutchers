@@ -3,102 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dave's Family Butchers | Fresh Meat in Fareham</title>
-    <meta name="description" content="Dave's Family Butchers - Fresh, quality meats and pies in Fareham. See our products, opening hours, and contact details.">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <title>Dave's Family Butchers - Fresh Meat & Homemade Pies | Fareham</title>
+    <meta name="description" content="Dave's Family Butchers in Fareham - Premium fresh meats, homemade pies, and expert butchery services. Supporting local suppliers since establishment.">
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-    <header>
-        <h1>Dave's Family Butchers</h1>
-        <br>
-        <br>
-        <p>Fresh, quality meats & pies in Fareham</p>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>Dave's Family Butchers</h1>
+                    <p class="nav-subtitle">Est. Fareham</p>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#products" class="nav-link">Our Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#hours" class="nav-link">Opening Hours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
     </header>
-    <nav>
-        <a href="#products">Products</a>
-        <script src="script.js"></script>
- 
-        <style>
-            body {
-            background: linear-gradient(135deg, #183a5c 0%, #235a92 40%, #0a1a2f 100%);
-            }
-        </style>
-        <a href="#about">About Us</a>
-        <a href="#hours">Opening Hours</a>
-        <a href="#contact">Contact</a>
-        <a href="tel:01329843438"><img class="phone1" src="images/phone.png" alt="PHONE"></a>
-    </nav>
-    <div class="container">
-        <section id="products">
-            <h2 style="color:#a71d2a;">Our Products</h2>
-            <p>Explore our selection of fresh meats and homemade pies, all sourced locally and prepared with care.</p>
-            <div class="products">
-                <div class="product-card">
-                    <img src="images/bc.jpg" alt="Bacon">
-                    <h3>Bacon</h3>
-                    <p>Locally sourced, thick-cut bacon with rich flavor and perfect for breakfast or sandwiches.</p>
-                </div>
-                <div class="product-card">
-                    <img src="images/heartsausage.jpg" alt="Sausages">
-                    <h3>Sausages</h3>
-                    <p>Handmade traditional pork sausages, ideal for grilling, frying, or your favorite casserole.</p>
-                </div>
-                <div class="product-card">
-                    <img src="images/w.jpg" alt="Beef">
-                    <h3>Beef</h3>
-                    <p>Prime cuts of beef, including steaks, roasting joints, and mince, all expertly prepared.</p>
-                </div>
-                <div class="product-card">
-                    <img src="images/pie.jpg" alt="Pies">
-                    <h3>Pies</h3>
-                    <p>Homemade pies with a variety of fillings, baked fresh daily for a hearty meal or snack.</p>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h2 class="hero-title">Premium Fresh Meats & Homemade Pies</h2>
+                <p class="hero-description">Serving Fareham with the finest quality meats and traditional butchery expertise for generations</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Explore Our Products</a>
+                    <a href="#contact" class="btn btn-secondary">Find Us</a>
                 </div>
             </div>
-        </section>
-        <section class="info-section" id="about">
-            <div class="info-block">
-                <h2>About Dave's Family Butchers</h2>
-                <p>
-                    Established in the heart of Fareham, Dave's Family Butchers is dedicated to providing the finest fresh meats and homemade pies. Our friendly team offers expert advice and a warm welcome to all customers. We pride ourselves on quality, tradition, and supporting local suppliers.
-                </p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Products</h2>
+                <p class="section-description">Explore our selection of fresh meats and homemade pies, all sourced locally and prepared with care.</p>
             </div>
-            <div class="info-block" id="hours">
-                <h2>Opening Hours</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/bc.jpg" alt="Fresh Bacon" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Bacon</h3>
+                        <p class="product-description">Locally sourced, thick-cut bacon with rich flavor perfect for breakfast or sandwiches.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/heartsausage.jpg" alt="Heart-shaped Sausages" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Sausages</h3>
+                        <p class="product-description">Handmade traditional pork sausages, ideal for grilling, frying, or your favorite casserole.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/w.jpg" alt="Prime Beef Cuts" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Beef</h3>
+                        <p class="product-description">Prime cuts of beef—including steaks, roasting joints, and mince—expertly prepared.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/pie.jpg" alt="Homemade Pies" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Homemade Pies</h3>
+                        <p class="product-description">Homemade pies with a variety of fillings, baked fresh daily for a hearty meal or snack.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Dave's Family Butchers</h2>
+                    <p class="about-description">
+                        Established in the heart of Fareham, Dave's Family Butchers is dedicated to providing the finest fresh meats and homemade pies. Our friendly team offers expert advice and a warm welcome to all customers. We pride ourselves on quality, tradition, and supporting local suppliers.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <h4>Local Sourcing</h4>
+                            <p>Supporting local farmers and suppliers</p>
+                        </div>
+                        <div class="feature">
+                            <h4>Expert Butchery</h4>
+                            <p>Traditional skills passed down through generations</p>
+                        </div>
+                        <div class="feature">
+                            <h4>Fresh Daily</h4>
+                            <p>Products prepared fresh every morning</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/shp.jpg" alt="Dave's Family Butchers Shop Front" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opening Hours Section -->
+    <section id="hours" class="hours">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Opening Hours</h2>
+                <p class="section-description">Visit us during our opening hours for the freshest selection</p>
+            </div>
+            <div class="hours-table-wrapper">
                 <table class="hours-table">
-                    <tr><th>Day</th><th>Open Hours</th></tr>
-                    <tr><td>Monday</td><td>06:00 - 16:00</td></tr>
-                    <tr><td>Tuesday</td><td>06:00 - 16:00</td></tr>
-                    <tr><td>Wednesday</td><td class="closed">Closed</td></tr>
-                    <tr><td>Thursday</td><td>06:00 - 16:00</td></tr>
-                    <tr><td>Friday</td><td>06:00 - 16:00</td></tr>
-                    <tr><td>Saturday</td><td>06:00 - 15:00</td></tr>
-                    <tr><td>Sunday</td><td class="closed">Closed</td></tr>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Open Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>06:00 - 16:00</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>06:00 - 16:00</td>
+                        </tr>
+                        <tr class="closed">
+                            <td>Wednesday</td>
+                            <td>Closed</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>06:00 - 16:00</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>06:00 - 16:00</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>06:00 - 15:00</td>
+                        </tr>
+                        <tr class="closed">
+                            <td>Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
-        </section>
-        <section id="contact">
-            <div class="info-block contact-details">
-                <h2>Contact & Find Us</h2>
-                <p>
-                    <strong>Address:</strong><br>
-                    119 Highlands Road,<br>
-                    Fareham PO15 6HZ
-                </p>
-                <p>
-                    <strong>Phone:</strong> <a href="tel:01329843438" style="color:#a71d2a;text-decoration:none;">01329 843438</a>
-                </p>
-                <div class="social">
-                    <a href="https://www.facebook.com/DavesFamilyButchersHighlandsRd/" target="_blank" rel="noopener">
-                        Visit us on Facebook
-                    </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact & Find Us</h2>
+                <p class="section-description">Visit our shop in Fareham for expert advice and premium quality meats</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Address</h3>
+                        <p>119 Highlands Road,<br>Fareham PO15 6HZ</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Phone</h3>
+                        <p><a href="tel:01329843438">01329 843438</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Best Time to Visit</h3>
+                        <p>Early morning for the freshest selection</p>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <h4>Find Us in Fareham</h4>
+                        <p>Located on Highlands Road in the heart of Fareham</p>
+                    </div>
                 </div>
             </div>
-        </section>
-    </div>
-    <footer>
-        &copy; 2025 Dave's Family Butchers, Fareham. Website by Riley Web Design.
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dave's Family Butchers</h3>
+                    <p>Traditional butchery serving Fareham with premium fresh meats and homemade pies.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#products">Our Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#hours">Opening Hours</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>119 Highlands Road, Fareham PO15 6HZ</p>
+                    <p>Phone: <a href="tel:01329843438">01329 843438</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dave's Family Butchers. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
-</html></div>
+</html>
