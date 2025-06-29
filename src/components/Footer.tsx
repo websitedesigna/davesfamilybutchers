@@ -8,9 +8,7 @@ const Footer: React.FC = () => {
   const footerSections = [
     {
       title: "Dave's Family Butchers",
-      content: [
-        "Traditional butchery serving Fareham with premium fresh meats and homemade pies for over two decades.",
-      ],
+      content: "Traditional butchery serving Fareham with premium fresh meats and homemade pies for over two decades.",
       type: 'description'
     },
     {
@@ -113,7 +111,7 @@ const Footer: React.FC = () => {
                   viewport={{ once: true }}
                 >
                   <p className="text-gray-300 leading-relaxed text-lg">
-                    {section.content[0]}
+                    {section.content}
                   </p>
                   
                   {/* Quality Badges */}
@@ -148,7 +146,7 @@ const Footer: React.FC = () => {
                   transition={{ duration: 0.8, delay: 0.3 + index * 0.2 }}
                   viewport={{ once: true }}
                 >
-                  {section.content.map((link: any, linkIndex: number) => (
+                  {(section.content as Array<{ label: string; href: string }>).map((link, linkIndex) => (
                     <motion.li
                       key={link.label}
                       initial={{ opacity: 0, x: -20 }}
@@ -191,7 +189,7 @@ const Footer: React.FC = () => {
                   transition={{ duration: 0.8, delay: 0.3 + index * 0.2 }}
                   viewport={{ once: true }}
                 >
-                  {section.content.map((item: any, itemIndex: number) => (
+                  {(section.content as Array<{ icon: any; text: string; href?: string }>).map((item, itemIndex) => (
                     <motion.div
                       key={itemIndex}
                       className="group"
