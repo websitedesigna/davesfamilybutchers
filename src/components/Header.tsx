@@ -68,9 +68,9 @@ const Header: React.FC = () => {
               transition={{ type: "spring", stiffness: 300 }}
             >
               <motion.img
-                src="/images/bros.jpg"
+                src="https://images.pexels.com/photos/4110378/pexels-photo-4110378.jpeg?auto=compress&cs=tinysrgb&w=100"
                 alt="Dave's Family Butchers"
-                className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-red-600 shadow-lg"
+                className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-red-600 shadow-lg object-cover"
                 whileHover={{ rotate: 360 }}
                 transition={{ duration: 0.8 }}
               />
