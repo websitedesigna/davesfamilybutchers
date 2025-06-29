@@ -5,6 +5,7 @@ import { resolve } from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/davesfamilybutchers/',
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
@@ -22,5 +23,19 @@ export default defineConfig({
         },
       },
     },
+    // Optimize for mobile performance
+    target: 'es2015',
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      },
+    },
+  },
+  // Optimize dev server for mobile testing
+  server: {
+    host: true,
+    port: 3000,
   },
 })
