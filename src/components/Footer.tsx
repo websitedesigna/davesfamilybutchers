@@ -111,7 +111,21 @@ const Footer: React.FC = () => {
                   viewport={{ once: true }}
                 >
                   <p className="text-gray-300 leading-relaxed text-lg">
-                    {section.content}
+                    {typeof section.content === "string" ? (
+  section.content
+) : Array.isArray(section.content) ? (
+  section.content.map((item, idx) =>
+    "label" in item ? (
+      <a key={idx} href={item.href}>{item.label}</a>
+    ) : (
+      <span key={idx}>
+        {item.icon && <item.icon />}
+        {item.text}
+        {item.href && <a href={item.href}>{item.text}</a>}
+      </span>
+    )
+  )
+) : null}
                   </p>
                   
                   {/* Quality Badges */}
