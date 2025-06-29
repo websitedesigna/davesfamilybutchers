@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-br from-red-900/90 via-red-800/85 to-red-700/80 z-10" />
         <motion.img
-          src="./images/bros.jpg"
+          src="https://i.ibb.co/zpTLmYP/shp.jpg"
           alt="Dave's Family Butchers Shop"
           className="w-full h-full object-cover"
           initial={{ scale: 1.2 }}

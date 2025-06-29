@@ -111,21 +111,7 @@ const Footer: React.FC = () => {
                   viewport={{ once: true }}
                 >
                   <p className="text-gray-300 leading-relaxed text-lg">
-                    {typeof section.content === "string" ? (
-  section.content
-) : Array.isArray(section.content) ? (
-  section.content.map((item, idx) =>
-    "label" in item ? (
-      <a key={idx} href={item.href}>{item.label}</a>
-    ) : (
-      <span key={idx}>
-        {item.icon && <item.icon />}
-        {item.text}
-        {item.href && <a href={item.href}>{item.text}</a>}
-      </span>
-    )
-  )
-) : null}
+                    {typeof section.content === "string" ? section.content : ""}
                   </p>
                   
                   {/* Quality Badges */}
@@ -260,9 +246,9 @@ const Footer: React.FC = () => {
               whileHover={{ scale: 1.05 }}
             >
               <motion.img
-                src="/images/bros.jpg"
+                src="https://i.ibb.co/d0LnZPFy/bros.jpg"
                 alt="Dave's Family Butchers"
-                className="w-12 h-12 rounded-full border-2 border-red-600"
+                className="w-12 h-12 rounded-full border-2 border-red-600 object-cover"
                 whileHover={{ rotate: 360 }}
                 transition={{ duration: 0.8 }}
               />

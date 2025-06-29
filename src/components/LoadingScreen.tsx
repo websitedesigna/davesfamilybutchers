@@ -17,9 +17,9 @@ const LoadingScreen: React.FC = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <motion.img
-            src="./images/bros.jpg"
+            src="https://i.ibb.co/d0LnZPFy/bros.jpg"
             alt="Dave's Family Butchers"
-            className="w-32 h-32 rounded-full mx-auto shadow-2xl border-4 border-white"
+            className="w-32 h-32 rounded-full mx-auto shadow-2xl border-4 border-white object-cover"
             animate={{ rotate: 360 }}
             transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
           />
