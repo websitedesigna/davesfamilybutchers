@@ -41,7 +41,7 @@ const Products: React.FC = () => {
       id: 4,
       title: 'Homemade Pies',
       description: 'Traditional homemade pies with various fillings, baked fresh daily for the perfect meal.',
-      image: '/images/pie.jpg',
+      image: './images/pie.jpg',
       icon: ChefHat,
       features: ['Homemade', 'Fresh Daily', 'Various Fillings'],
       gradient: 'from-amber-500 to-red-600',
